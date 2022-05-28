@@ -1,8 +1,7 @@
 # A place for me to take notes as I grow into a developer.
   
 ## Odin Project Progress
-<<<<<<< HEAD
-Foundations - Elements and Tags  
+Foundations - Links and Images
   
 ## Git Cheatsheet
 Remote Repository:  
@@ -18,6 +17,3 @@ Status/History:
  git log  
   
 program | action | destination
-=======
-Foundations - Links and Images
->>>>>>> c06f04b68c73abc5b12bd1d4e6c56d0a2519c72d
