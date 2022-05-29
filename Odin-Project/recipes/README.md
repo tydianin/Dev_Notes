@@ -5,7 +5,7 @@ Odin Project curriculum.
 
 ## Features
 
-Links the user to recipes for breakfast, lunch, and dinner.
+Links the user to recipes for breakfast, dinner, and desert.
 
 ## Details
 

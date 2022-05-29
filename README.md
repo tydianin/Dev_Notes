@@ -1,7 +1,7 @@
 # A place for me to take notes as I grow into a developer.
   
 ## Odin Project Progress
-HTML Foundations - Commit Messages
+Foundations - Project: Recipes
   
 ## Git Cheatsheet
 Remote Repository:  
