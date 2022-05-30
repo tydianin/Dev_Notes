@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  color: black;
+}
+
+a {
+  font-weight: bold;
+}
+
+em {
+  font-size: 12px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.index img {
+  width: 200px;
+  height: 300px;
+}
+
+.pages img {
+  height: 500px;
+  width: auto;
+}
+
+ul, ol {
+  display: inline-block;
+  text-align: left;
+}
