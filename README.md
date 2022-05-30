@@ -1,7 +1,7 @@
 # A place for me to take notes as I grow into a developer.
   
 ## Odin Project Progress
-Foundations - The Box Model
+Foundations - Block and Inline
   
 ## Git Cheatsheet
 Remote Repository:  
