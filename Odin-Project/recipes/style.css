@@ -15,22 +15,30 @@ em {
   font-size: 12px;
 }
 
-.center {
-  margin: 0 auto;
+nav {
   text-align: center;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .index img {
   width: 200px;
-  height: 300px;
+  padding: 4px;
 }
 
 .pages img {
   height: 500px;
-  width: auto;
 }
 
-ul, ol {
-  display: inline-block;
+ul, ol, li {
   text-align: left;
 }
