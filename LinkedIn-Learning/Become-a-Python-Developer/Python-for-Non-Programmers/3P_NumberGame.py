@@ -24,14 +24,14 @@ def main():
       counter += 1
       print("Checking guess...")
       time.sleep(1)
-      print(CheckGuess(guess, number))
+      print(checkGuess(guess, number))
 
   print(f"Number of guesses: {counter}")
 
   return 0
 
 
-def CheckGuess(guess, number):
+def checkGuess(guess, number):
   if guess < number:
     return "Too low."
   elif guess > number:

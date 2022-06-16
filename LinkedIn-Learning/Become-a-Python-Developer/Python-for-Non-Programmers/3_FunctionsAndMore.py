@@ -8,15 +8,15 @@ Hello()
 
 
 # parameters are used to pass information into a function
-def VehicleInfo(year, make, model):
+def vehicleInfo(year, make, model):
   print(f"Nice, a {year} {make} {model}.")
 
 
-VehicleInfo(2017, "BMW", "X3")
+vehicleInfo(2017, "BMW", "X3")
 
 
 # return statements pass information back out of the function
-def Capitalize(string):
+def capitalize(string):
   caps = ""
 
   # technically we could just do string.upper(), but this is practice
@@ -27,7 +27,7 @@ def Capitalize(string):
   return caps
 
 
-print(Capitalize("what"))
+print(capitalize("what"))
 
 
 # input() is used for stdin (as a string)
@@ -36,7 +36,7 @@ print(user_number * 2)
 print(int(user_number) * 2)
 
 
-def UpperLower(string, choice):
+def upperLower(string, choice):
   if choice == "1":
     return string.upper()
   elif choice == "2":
@@ -47,4 +47,4 @@ def UpperLower(string, choice):
 
 user_string = input("Enter a string: ")
 user_choice = input("1 to capitalize. 2 to lowercase: ")
-print(UpperLower(user_string, user_choice))
+print(upperLower(user_string, user_choice))
