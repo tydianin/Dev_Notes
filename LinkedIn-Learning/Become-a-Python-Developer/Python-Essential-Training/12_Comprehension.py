@@ -35,3 +35,19 @@ print(short) # prints "["my", "is", "to"]"
 # we can nest the comprehensions
 listed = [[cleaner(word) for word in sentence.split()] for sentence in myString.split('.')]
 print(listed) # prints "[["my", "name", ..., "moreno"], ["prepare", ..., "hugged"]]"
+
+# dictionaries have comprehension as well
+animalList = [('a', "aardvark"), ('b', "bear"), ('c', "cat"), ('d', "dog")]
+animals = {key: value for key, value in animalList}
+print(animals) # prints "{'a': "aardvark", 'b': "bear", 'c': "cat", 'd': "dog"}"
+
+# we can reverse this move as well
+print(animals.items()) # prints "dict_items([('a', "aardvark"), ..., ('d', "dog")])"
+animalList = list(animals.items())
+print(animalList) # prints "[('a', "aardvark"), ..., ('d', "dog")]"
+
+# possibly most important is list comprehension on the dictionary
+listed = [{"letter": key, "name": value} for key, value in animals.items()]
+print(listed) # prints "[{'letter': 'a', 'name': 'aardvark'},
+              #        " {'letter': 'b', 'name': 'bear'}",
+              # and so on

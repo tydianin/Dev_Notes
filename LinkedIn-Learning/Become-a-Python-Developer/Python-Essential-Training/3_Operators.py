@@ -1,26 +1,24 @@
 # arithmetic operators + * **
 
 # division always results in a float
-print("Division:", 2 / 3)
+2 / 3 # returns 0.6666666666666667
 
 # modulo is always important
-print("Modulo:", 8 % 3)
+8 % 3 # returns 2
 
 # string concat
-print("string 1 " + "string 2")
+print("string 1 " + "string 2") # prints "string 1 string 2"
 
 # string repetition
-print("four strings " * 4)
+print("four" * 4) # prints "fourfourfourfour"
 
 # you can't do a string and an int tho, it'll die
-# "1" + 4 = TypeError
+'1' + 4 # returns TypeError
 
-# comparison operators == === < <= > >=
+# comparison operators == < <= > >=
 
 # logical operators and, or, not
 
 # membership operator in
-print(1 in [1, 2, 3, 4, 5])
-
-result = "cat" in "I like cat"
-print(result)
+1 in [1, 2, 3, 4, 5] # returns True
+"cat" in "I like cat" # returns True
