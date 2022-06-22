@@ -1,7 +1,7 @@
 # A place for me to take notes as I grow into a developer.
   
 ## Odin Project Progress
-CSS Foundations - Axes
+Foundations - Alignment
   
 ## Git Cheatsheet
 Remote Repository:  
