@@ -1,23 +1,38 @@
 body {
   background: #1F2937;
-  color: #F9FAF8;
+  color: white;
   font-size: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background: #3882F6;
+  font-size: 1.125em;
+  font-weight: bold;
+  height: 2em;
+  width: 7.5em;
+  border-style: none;
+  border-radius: 0.5em;
+}
+
 body>* {
   padding-inline: 15%;
-  padding-bottom: 5em;
+  padding-block: 2.5em;
   display: flex;
-  gap: 2em;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
 }
 
 .header {
+  padding-block: 0;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 1em;
 }
 
 .header .logo {
@@ -25,19 +40,13 @@ body>* {
   font-weight: bold;
 }
 
-.header .nav,
-.header .nav * {
+.header .nav {
   font-size: 1.125em;
-  color: #E5E7EB;
-  text-decoration: none;
-
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 1em;
+  gap: 1em;
 }
 
 .content {
-  justify-content: center;
   gap: 2em;
 }
 
@@ -45,6 +54,7 @@ body>* {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
 }
 
 .content .left .title {
@@ -53,34 +63,54 @@ body>* {
 }
 
 .content .right {
-  background: gray;
   flex-basis: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content .right .placeholder {
-  
+.content .right img {
+  max-width: 100%;
 }
 
 .info {
-  background: #F9FAF8;
+  gap: 2.5em;
+  background: white;
+  flex-direction: column;
 }
 
 .info .text {
   color: #1F2937;
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: bolder;
 }
 
 .info .illustrations {
-  color: #E5E7EB;
+  display: flex;
+  column-gap: 1em;
+}
+
+.info .illustrations img {
+  border-style: solid;
+  border-radius: 1em;
+  color: #3882F6;
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+}
+
+.info .illustrations * {
+  text-align: center;
+  color: gray;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote {
-  background: #E5E7EB;
+  background: lightgray;
   color: #1F2937;
+  flex-direction: column;
+  gap: 0;
 }
 
 .quote .text {
@@ -93,4 +123,32 @@ body>* {
   font-size: 1.5em;
   font-weight: bold;
   text-align: right;
+}
+
+.call {
+  background: white;
+}
+
+.call .wrapper {
+  background: #3882F6;
+  width: 100%;
+  padding-block: 2.5em;
+  padding-inline: 5em;
+  border-style: none;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+.call .wrapper .top {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.call .wrapper button {
+  border-style: solid;
+  border-color: white;
+  border-radius: 0.5em;
 }
