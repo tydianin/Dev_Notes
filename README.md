@@ -14,7 +14,7 @@ program | action | destination
 ~~HTML Foundations~~  
 ~~CSS Foundations~~  
 ~~Flexbox~~  
-JavaScript Basics
+JavaScript Basics  
 The Back End
 
 ## Git Cheatsheet
