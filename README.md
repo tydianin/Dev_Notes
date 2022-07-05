@@ -2,32 +2,52 @@
 
 ## Ask Questions
 
-I am working on [project].
-When I try to [process], [error].
-I've looked at [resource] and [status], but [problem]
+I am working on [project].  
+When I try to [process], [error].  
+I've looked at [resource] and [status], but [problem].  
 
-program | action | destination
+program | action | destination  
 
 ## Odin Project Progress
 
-Foundations - Alignment
+~~Git Basics~~  
+~~HTML Foundations~~  
+~~CSS Foundations~~  
+~~Flexbox~~  
+JavaScript Basics
+The Back End
 
 ## Git Cheatsheet
 
-### Remote Repository
+### Remote Workflow
 
-`git clone git@github.com:USER-NAME/REPOSITORY-NAME.git`
-`git push`
-
-### Workflow
-
-`git add .`
-`git commit -m "Commit message"`
+When working IRL, fork first.  
+`git clone git@github.com:USER-NAME/REPOSITORY-NAME.git`  
+<https://www.git-scm.com/docs/git-clone>  
+  
+Commit often.  
+`git add [<pathspec>...]`  
+<https://www.git-scm.com/docs/git-add>  
+  
+`git commit [-m <msg>]`  
+<https://www.git-scm.com/docs/git-commit>  
+  
+`git push [<repository>]`  
+<https://www.git-scm.org/docs/git-push>  
+  
+When working IRL, submit a pull request.  
+`git request-pull [-p] <start> <URL> [<end>]`  
+<https://www.git-scm.org/docs/git-request-pull>  
 
 ### Status/History
 
-`git status`
-`git log`
+Check status often to make sure your assumptions are correct.  
+`git status [<options>...] [--] [<pathspec>...]`  
+<https://www.git-scm.org/docs/git-status>  
+  
+Check the log to make sure it's not your fault.  
+`git log [<options>] [<revision-range>] [[--] <path>...]`  
+<https://www.git-scm.org/docs/git-log>  
 
 ## Git Commit Messages
 
