@@ -38,8 +38,8 @@
 ~~Fundamentals Part 1~~  
 ~~Fundamentals Part 2~~  
 ~~JavaScript Developer Tools~~  
-Fundamentals Part 3  
-Problem Solving  
+~~Fundamentals Part 3~~  
+~~Problem Solving~~  
 Understanding Errors  
 Project: Rock Paper Scissors  
 Clean Code  
