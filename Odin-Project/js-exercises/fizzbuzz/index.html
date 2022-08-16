@@ -19,7 +19,12 @@
     <li>Otherwise print the current number</li>
   </ol>
 
-  <form action="#" onsubmit="getInputValue()">
+  <!--
+    using "onsubmit" makes the enter key work as well as clicking the button
+    using "return false;" makes the webpage not refresh upon submission
+  -->
+  
+  <form action="#" onsubmit="getInputValue(); return false;">
     <label>Please enter the number you would like to test.</label><br>
     <input type="text" id="in1" placeholder="Enter a number...">
     <input type="submit" value="Go">
@@ -31,6 +36,7 @@
     function getInputValue() {
       let answer = parseInt(document.getElementById("in1").value);
 
+      // basic input validation, revisit later after learning actual input validation
       if (answer >= 1 && answer != null && !isNaN(answer)) {
         fizzBuzz(answer);
       } else {
