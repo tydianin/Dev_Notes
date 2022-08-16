@@ -40,10 +40,10 @@
 ~~JavaScript Developer Tools~~  
 ~~Fundamentals Part 3~~  
 ~~Problem Solving~~  
-Understanding Errors  
-Project: Rock Paper Scissors  
-Clean Code  
-Installing Node.js  
+~~Understanding Errors~~  
+~~Project: Rock Paper Scissors~~  
+~~Clean Code~~  
+~~Installing Node.js~~  
 Fundamentals Part 4  
 DOM Manipulation and Events  
 Revisiting Rock Paper Scissors  
