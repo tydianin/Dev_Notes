@@ -21,23 +21,31 @@ The Back End
 
 ### Remote Workflow
 
-When working IRL, fork first.  
+Clone the repository.  
 `git clone git@github.com:USER-NAME/REPOSITORY-NAME.git`  
 <https://www.git-scm.com/docs/git-clone>  
   
-Commit often.  
-`git add [<pathspec>...]`  
+Create a development branch and checkout.  
+`git checkout -b <new-branch-name>`  
+<https://www.git-scm.com/docs/git-checkout>  
+  
+Push the development branch to the repository.  
+`git push -u origin <new-branch-name>`  
+<https://www.git-scm.com/docs/git-push>  
+  
+Commit atomic changes often.  
+`git add .`  
 <https://www.git-scm.com/docs/git-add>  
   
-`git commit [-m <msg>]`  
+`git commit -m <msg>`  
 <https://www.git-scm.com/docs/git-commit>  
   
-`git push [<repository>]`  
-<https://www.git-scm.org/docs/git-push>  
+Since we created a branch, we can call push without parameters.  
+`git push`  
   
-When working IRL, submit a pull request.  
-`git request-pull [-p] <start> <URL> [<end>]`  
-<https://www.git-scm.org/docs/git-request-pull>  
+Submit a pull request to the main branch using GitHub CLI.  
+`gh pr create [flags] -t <title> -b <body>`  
+<https://www.cli.github.com/manual/gh_pr_create>  
 
 ### Status/History
 
