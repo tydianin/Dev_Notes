@@ -2,7 +2,7 @@ let season = 'summer';
 let response;
 
 // Add your code here
-
+season === "summer" ? response = "It's summer!" : response = "It's not summer..."; 
 // Don't edit the code below here!
 
 const section = document.querySelector('section');
