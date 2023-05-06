@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Functions: Task 3</title>
+    <style>
+        p {
+            color: purple;
+            margin: 0.5em 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <section class="preview"></section>
+</body>
+
+<script>
+    /*
+    1. Refactor the code that generates the random number into a separate
+    function called `random()`, which takes as parameters two generic bounds
+    that the random number should be between, returns the result.
+
+    2. Update the chooseName() function so that it makes use of the random
+    number function, takes the array to choose from as a parameter, and returns
+    the result.
+
+    3. Print the returned result to the paragraph `para`'s `textContent`.
+    */
+
+    // So basically what I did but with two functions instead of one.
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para = document.createElement('p');
+
+    // Add your code here
+
+    // function defined in prompt 1.
+    function random(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    // function defined in prompt 2.
+    function chooseName(array, index) {
+        return array[index];
+    }
+
+    // prompt 3.
+    para.textContent = chooseName(names, random(0, names.length));
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    section.appendChild(para);
+</script>
+
+</html>
