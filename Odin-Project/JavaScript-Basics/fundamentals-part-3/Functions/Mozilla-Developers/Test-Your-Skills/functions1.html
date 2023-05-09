@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Functions: Task 1</title>
+    <style>
+        p {
+            color: purple;
+            margin: 0.5em 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+    <section class="preview"></section>
+</body>
+
+<script>
+    // Create a simple function, `chooseName()` that prints a random name from `names` to `para`.
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para = document.createElement('p');
+
+    // Add your code here
+
+    // function defined in the prompt. Pastes a string to para.textContent.
+    function chooseName(name) {
+        para.textContent = name;
+    }
+
+    // calls function using `floor+random` to get random name from array.
+    chooseName(names[Math.floor(Math.random() * names.length)]);
+    
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    section.appendChild(para);
+</script>
+
+</html>

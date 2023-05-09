@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentals 3 Assignment</title>
+</head>
+
+<body>
+    <h1>JavaScript Fundamentals Part 3</h1>
+
+    <h2>add7</h2>
+    <p>Write a function called <code>add7</code> that takes one number and returns that number + 7.</p>
+    <input id="i_add7" placeholder="Number to modify">
+    <button type="button" onclick="add7()">Add 7</button>
+    <p id="p_add7"></p>
+
+    <h2>multiply</h2>
+    <p>Write a function called <code>multiply</code> that takes 2 numbers and returns their product.</p>
+    <input id="i1_multiply" placeholder="First number">
+    <input id="i2_multiply" placeholder="Second Number">
+    <button type="button" onclick="multiply()">Multiply</button>
+    <p id="p_multiply"></p>
+
+    <h2>capitalize</h2>
+    <p>Write a function called <code>capitalize</code> that takes a string and returns that string with only the first
+        letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.</p>
+    <input id="i_capitalize" placeholder="Text to capitalize">
+    <button type="button" onclick="capitalize()">Capitalize</button>
+    <p id="p_capitalize"></p>
+
+    <h2>lastLetter</h2>
+    Write a function called <code>lastLetter</code> that takes a string and returns the very last letter of that string.
+    <input id="i_lastLetter" placeholder="String to modify">
+    <button type="button" onclick="lastLetter()">lastLetter</button>
+    <p id="p_lastLetter"></p>
+
+    <script>
+        "use strict";
+
+        function getValue(element) {
+            return document.getElementById(element).value;
+        }
+
+        function isValidNumber(string) {
+            string = string.trim();
+            return (isNaN(string) || !string) ?
+                "Please enter a valid number." :
+                +string;
+        }
+
+        function displayValue(element, value) {
+            document.getElementById(element).innerHTML = value;
+        }
+
+        function add7() {
+            let number = isValidNumber(getValue("i_add7"));
+
+            let text = "Sum: ";
+            if (!isNaN(number)) text += (number += 7);
+            else text = number;
+            displayValue("p_add7", text);
+        }
+
+        function multiply() {
+            let number1 = isValidNumber(getValue("i1_multiply"));
+            let number2 = isValidNumber(getValue("i2_multiply"));
+
+            let text = "Product: ";
+            if (!isNaN(number1) && !isNaN(number2)) {
+                text += (number1 * number2);
+            } else if (isNaN(number1)) {
+                text = `First number invalid. ${number1}`;
+            } else {
+                text = `Second number invalid. ${number2}`;
+            }
+
+            displayValue("p_multiply", text);
+        }
+
+        function capitalize() {
+            let text = getValue("i_capitalize").trim().toLowerCase();
+            if (text) text = text.charAt(0).toUpperCase() + text.slice(1);
+            else text = "Please enter a string."
+            displayValue("p_capitalize", text);
+        }
+
+        function lastLetter() {
+            let text = getValue("i_lastLetter").trim().slice(-1);
+            if (!text) text = "Please enter a string."
+            displayValue("p_lastLetter", text);
+        }
+    </script>
+</body>
+
+</html>
